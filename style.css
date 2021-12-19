@@ -13,7 +13,7 @@ body {
     padding: 1px 5px 1px 5px;
     border-radius: 20px;
 }
-#header h1, input, label {
+#header h1 #bw {
     align-self: center;
 }
 
@@ -23,6 +23,7 @@ body {
     align-self: center;
     padding-bottom: 3%;
 }
+
 
 .container {
     margin-top: 50px;
