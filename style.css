@@ -1,0 +1,30 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: paleturquoise;
+}
+#header {
+    display: flex;
+    flex-direction: column;
+}
+#header h1 {
+    align-self: center;
+}
+
+#header button {
+    width: fit-content;
+    height: auto;
+    align-self: center;
+}
+
+#conatiner {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.divs {
+    background-color: white;
+}
+footer {
+    margin-top: 15%;
+}
