@@ -1,10 +1,16 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: paleturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #header {
     display: flex;
     flex-direction: column;
+    background-color: lightslategrey;
+    padding: 1px 5px 1px 5px;
 }
 #header h1 {
     align-self: center;
@@ -16,14 +22,20 @@ body {
     align-self: center;
 }
 
-#conatiner {
-    display: grid;
+.container {
+    margin-top: 50px;
+    display: inline-grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
 }
 
 .divs {
-    background-color: white;
+        background-color: white;
+        border: 1px solid black;
 }
 footer {
     margin-top: 15%;
