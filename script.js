@@ -1,6 +1,7 @@
 const container = document.querySelector('.container');
 const resetBtn = document.querySelector('#resetBtn');
 const elements = document.getElementsByClassName('divs');
+const blacknWhite = document.querySelector('#blacknWhite');
 
 createGrid = () => {
     for (let i = 0; i < (16 * 16); i++) {
@@ -27,7 +28,30 @@ function getRandomColor() {
     for (let i = 0; i < (16*16); i++) {
         children[i].style.backgroundColor = 'white';
     }
+    
 })
-
+function validate() {
+    let children = container.children;
+    if(blacknWhite.checked) {
+        for (let i = 0; i < (16*16); i++) {
+        children[i].removeEventListener('mouseover', function(event){
+            event.target.style.backgroundColor = getRandomColor();
+        })
+        children[i].addEventListener('mouseover', function(event){
+            event.target.style.backgroundColor = 'black';
+        })
+    }
+    }
+    else {
+        for (let i = 0; i < (16*16); i++) {
+            children[i].removeEventListener('mouseover', function(event){
+                event.target.style.backgroundColor = 'black';
+            })
+            children[i].addEventListener('mouseover', function(event){
+                event.target.style.backgroundColor = getRandomColor();
+            })
+        }
+    }
+}
 createGrid();
 console.log(container);

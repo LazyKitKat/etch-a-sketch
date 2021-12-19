@@ -11,8 +11,9 @@ body {
     flex-direction: column;
     background-color: lightslategrey;
     padding: 1px 5px 1px 5px;
+    border-radius: 20px;
 }
-#header h1 {
+#header h1, input, label {
     align-self: center;
 }
 
@@ -20,6 +21,7 @@ body {
     width: fit-content;
     height: auto;
     align-self: center;
+    padding-bottom: 3%;
 }
 
 .container {
